@@ -89,6 +89,7 @@ def nmap_scan_vul():
 			for item in result:
 				unique_cves.update(item['cvelist'])
 			print(list(unique_cves))
+			print("Total CVE found: ", len(list(unique_cves)))
 	else:
 		 print("Not found CVE for apache version {}".format(ver_apa))
 	
